@@ -11,9 +11,9 @@ public class Response {
         return payload.id
     }
 
-    private var payload: JSONRPC_2_0.Response
+    public var payload: JSONRPC_2_0.Response
 
-    internal init(payload: JSONRPC_2_0.Response, url: WCURL) {
+    public init(payload: JSONRPC_2_0.Response, url: WCURL) {
         self.payload = payload
         self.url = url
     }
